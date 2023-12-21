@@ -1,0 +1,629 @@
+         :root{
+        --navbar-backround-color: white;
+        --sous-titre:rgb(31, 90, 199);
+        --hover:#021552;
+        --bar: rgb(221, 180, 180);
+        --cadre: #f0f8ff;
+        --navbar-transition-speed: .2s;
+        --primary-color: rgb(240, 188, 77);
+        --opaque: rgba(240, 248, 255, 0.623);
+        --dark-opacity: #021552b9;
+    }
+    html{
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+        font-size: 16px;
+    }
+    body{
+        margin: 0;
+        padding: 0;
+        background-image: url(images/fond\ du\ site.jpg);
+        background-position: center;
+        width: 100%;
+        background-repeat: repeat;
+        background-attachment: fixed;
+        font-family: 'Agbalumo', sans-serif;
+        color: var(--hover);
+    }
+    main{
+        padding: 5rem 4rem;
+        margin-left: 5rem;
+        text-align: justify;
+        font-weight: lighter;
+    }
+    main h1{
+        font-weight: 200;
+        font-size: 40px;
+    }
+    .p1{
+        padding-top: 15px;
+    }
+
+    /* NAVBAR */
+    .navbar{
+        width: 5rem;
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        background-color: var(--cadre);
+        transition: var(--navbar-transition-speed) ease;
+        z-index: 5;
+    }
+    .navbar-menu img{
+        width: 30px;
+        height: auto;
+        position: absolute;
+        margin: 10px auto 10px  23px;
+        padding: 0;
+    }
+    .navbar:hover .img{
+        display: none;
+    }
+    .navbar:hover{
+        width: 13rem;
+    }
+    .navbar:hover .img1{
+        padding-left: 28%;
+        transition: 0.5s;
+        transform: rotate(360deg);
+    }
+    .navbar:not(:hover) .img1{
+        transition: 0.5s;
+    }
+    .navbar-menu {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        background-color: var(--bar);
+    }
+    .navbar-item{
+        width: 100%;
+        border-bottom: solid 1px var(--bar);
+    }
+    .navbar-link{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        height: 5rem;
+        width: 100%;
+    }
+    a{
+        text-decoration: none;
+    }
+    .navbar-title:hover{
+        background-color:var(--cadre);
+        color:var(--primary-color);
+        border-color:var(--primary-color);
+        border: solid 2px;
+        transition: 0.5s;
+        padding-left: 40%;
+    }
+    .navbar-title{
+        color: var(--cadre);
+        position: absolute;
+        width: 70%;
+        display: block;
+        margin: 0;
+        padding: 15px 0;
+        padding-left: 10px;
+    }
+    .navbar:not(:hover) .navbar-title{
+        display: none;
+    }
+    .logo {
+        background-color: var(--bar);
+        height: 60px;
+    }
+    .logo .navbar-title{
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    .navbar:hover .logo .navbar-icon{
+        transform: rotate(180deg);
+    }
+    .navbar:not(:hover){
+        transition: 0.5s;
+    }
+
+    /* Presentation*/
+    .présentation{
+        background-color:var(--bar);
+        color: var(--cadre);
+        padding: 4rem 160px 5px;
+        text-align: center;
+        margin-left: 0;
+    }
+
+    /* A LA UNE*/
+    h3{
+        font-weight: 100;
+        font-size: 30px;
+        color: var(--bar);
+    }
+    #acceuil div{
+        margin-left: 20%;
+    }
+    #acceuil h4{
+        font-size: 25px;
+        font-weight: 100;
+    }
+    .item{
+        width: 30px;
+        height: auto;
+        float: left;
+        padding: 6px 5px 0 0
+    }
+    .item2 {
+        width: 30px;
+        height: auto;
+        float: left;
+        padding: 0 2px 0 0;
+        position: relative;
+        bottom: 8px;
+    }
+    #acceuil .visuelle{
+        margin: 0 10px;
+        width: 300px;
+        height: auto;
+        display: block;
+        float: left;
+        margin-right: 6%;
+    }
+    #acceuil > p {
+        margin-left: 25%;
+        margin-bottom: 0;
+    }
+    #acceuil::after{
+        content: "";
+        clear: both;
+        display: block;
+    }
+    .recette li{
+        margin-left: 27%;
+    }
+
+    /* O fourneaux*/
+    header{
+        justify-content: center;
+        display: flex;
+    }
+    .principal{
+        color: var(--bar);
+        font-size: 35px;
+        font-weight: bolder;
+        text-align: center;
+        font-family: 'Oleo Script Swash Caps', serif;
+        margin: 5px 0;
+    }
+    .pr1{
+        border: solid 2px var(--bar);
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+        padding: 0 50px;
+        margin-top: 0;
+        margin-right: auto;
+        border-top: solid 0px var(--cadre);
+        position: fixed;
+        z-index: 5;
+        background-color:var(--cadre);
+        transition: 0.3s;
+        }
+    .pr1:hover{
+        border: 10px double var(--primary-color);
+        transition: 0.3s;
+        border-top: solid 0;
+    }
+    .pr1:hover .principal{
+        color: var(--primary-color) ;
+    }
+    header{
+        margin-top: 0;
+        padding-top: 0;
+    }
+    section > h1, .visuelle{
+        border: outset 0.5px var(--cadre);
+        border-radius: 5px;
+        background-color: var(--cadre);
+        padding: 10px;
+    }
+    
+    /*IDEES RECETTE*/
+    .carroussel{
+        display: block;
+        margin-left: 0;
+        height: 100%;
+    }
+    .i01 {
+        margin-bottom: 3px;
+        margin-left: 15px;
+        font-family: 'Oleo Script Swash Caps', serif;
+        font-size: 30px;
+        color: var(--sous-titre);
+        margin-top: 10px;
+    }
+    .i0:not(:hover) p{
+        display: none;
+    }
+    .i0 {
+        display: inline-flex;
+        margin-left: 15px;
+        transition: 0.5s;
+    }
+    .i0 :hover p{
+        width: 30%;
+        position: absolute;
+        top: 0;
+        padding-left: 3%;
+        padding-right: 30%;
+        padding-right: 60%;
+    }
+    .i0 p {
+        padding-right: 70px;
+    }
+    .i0 img{
+        width: 210px;
+        height: 160px;
+        top: 20%;
+        padding: 10px;
+        background: var(--cadre);
+        border-radius: 25px;
+        transition: 0.3s;
+        display: block;
+        max-width: 400px;
+        max-height: 250px;
+    }
+    .i0:hover img{
+        width: 400px;
+        height: 250px;
+    }
+    .i0:hover{
+        padding: 10px;
+        background: var(--cadre);
+        border-radius: 5px;
+        margin-right: 20px;
+        border: solid 5px var(--bar);
+        transition: 1s;
+    }
+    .i0:not(:hover){
+        transition: 0.3s;
+    }
+
+    /* ACTUALITES */
+    .actu {
+        display: flex;
+        flex-wrap: wrap-reverse;
+        border: solid 5px var(--bar);
+        padding: 25px 0 ;
+        border-radius: 10px;
+        justify-content: center;
+    }
+    iframe{
+        width: 310px;
+        height: auto;
+        border-radius: 10px;
+    }
+    .actu div{
+        border: solid 1px transparent;
+        border-radius: 10px;
+        padding: 6px 6px;
+    }
+    .actu div:hover{
+        border: solid 1px var(--primary-color);
+        background-color: var(--primary-color);
+    }
+
+    /*L'EQUIPE*/
+    .équipe{
+        list-style: none;
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+    .rond{
+        width: 160px;
+        height: 160px;
+        padding: 3px;
+        background-color: var(--cadre);
+        border: solid 1px var(--bar);
+        border-radius: 100%;
+        text-align: center;
+        margin: 0 10px;
+    }
+    .rond img{
+        width: 160px;
+        height: 160px;
+        border-radius: 100%;
+        z-index: 3;
+    }
+    .rond:hover img{
+        transform: rotate(360deg);
+        transition: 0.8s;
+        opacity: 0.5;
+    }
+    .rond:not(:hover) .rond2 {
+        display: none;
+        transition: 0.5s;
+    }
+    .rond p{
+        padding: 5px;
+        color: var(--hover);
+    }
+    .rond2 {
+        background-color: var(--opaque);
+        border-radius: 100%;
+        width: 160px;
+        height: 160px;
+        position: absolute;
+    }
+    .rond:hover .rond2 {
+        z-index: 4;  
+        transition: 1s;
+    }
+    .rond2{
+        text-align: center;
+        align-items: center;
+    }
+    .citation{
+        font-style: italic;
+    }
+
+    /*CONTACT*/
+    .contact {
+        margin-top: 7%;
+    }
+    .contact ul{
+        font-size: 20px;
+        list-style: url(images/utilisateur.png);
+    }
+    .contact h3{
+        margin: 15px 0;
+    }
+    .contact li:hover{
+        color: var(--bar);
+        text-decoration: underline;
+    }
+    .contact li{
+        width: fit-content;
+    }
+
+    /*Promotions*/
+    .frise{
+        animation-iteration-count: infinite;
+        animation-name: frise;
+        animation-duration: 9s;
+        animation-direction: normal;
+        background-color: var(--cadre);
+        padding-top: 2%;
+        padding-bottom: 2%;
+        animation-timing-function: linear;
+        margin-top: 6%;
+        margin-bottom: 0;
+    }
+    @keyframes frise{
+        from{
+            padding-left: 110%;
+            width: 200%;
+        }
+        25%{
+            color: var(--bar);
+        }
+        50%{
+            color: var(--primary-color);
+        }
+        to{
+            margin-left: -70%;
+            width: 200%;
+            color: var(--hover);
+        }
+    }
+    .delta{
+        width: 100%;
+        overflow: hidden;
+    }
+    .main1{
+        padding-top: 10px;
+    }
+
+    /*Ustensiles*/
+    .ustensiles{
+        display: grid;
+        list-style: none;
+        border: solid 2px var(--hover);
+        background-color: var(--cadre);
+        padding: 0;
+        grid-template-columns: 2fr 2fr 2fr 5rem;
+        grid-template-rows: auto;
+        grid-template-areas: "li1 li2 li3 li0" 
+        "li4 li5 li6 li0";
+    }
+    .ustensiles li:not(.li0){
+        border: solid 1px var(--hover);
+        text-align: center;
+    }
+    .ustensiles li:hover:not(.li0){
+        background-color: var(--hover);
+        color: var(--cadre);
+    }
+    .ustensiles button:focus .contenu{
+        position: absolute;
+        width: 70%;
+        height: 70%;
+        top: 55%;
+        left: 18%;
+        background-color: var(--opaque);
+        border-radius: 5px;
+        border: solid 1px var(--hover);
+        color: var(--hover);
+        padding: 10px;
+        overflow: scroll;
+    }
+    .ustensiles button:not(:focus) .contenu{
+        display: none;
+    }
+    .contenu img{
+        width: 200px;
+        height: auto;
+        float: left;
+        border-radius: 10px;
+        padding-right: 10px;
+    }
+    .contenu span{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        height: auto;
+        padding-bottom: 15px;
+    }
+    .contenu h4{
+        font-size: 20px;
+        color: var(--hover);
+        position: relative;
+        margin-top: 0;
+        background-color: var(--dark-opacity);
+        color: var(--cadre);
+        width: 100%;
+    }
+    .contenu span div{
+        text-align: left;
+        background-color: var(--cadre);
+        border-radius: 10px;
+        padding: 5px 10px;
+        width: 600px;
+    }
+    .contenu div p{
+        margin-bottom: 0;
+    }
+    .prodtitle{
+        font-size: 18px;
+    }
+    .ustensiles button{
+        background-color: var(--cadre);
+        padding: 0;
+        font-family: 'Agbalumo', sans-serif;
+        color: var(--hover);
+        font-size: 16px;
+    }
+    button{
+        border: none;
+    }
+    .ustensiles h3{
+        width: 100%;
+        height: 40px;
+        background-color: var(--opaque);
+        margin-bottom: 0;
+        margin-top: 42.5%;
+        color: var(--hover);
+        padding-bottom: 5px;
+    }
+    .ustensiles li:hover:not(.li0) h3{
+        background-color: var(--dark-opacity);
+        color: var(--cadre);
+    }
+    .li0{
+        grid-area: "li0";
+        width: auto;
+        height: 180px;
+        text-align: center;
+        padding-top: 2px;
+        background-color: var(--bar);
+        color: var(--cadre);
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        animation-name: one;
+        animation-delay: 0s;
+    }
+    @keyframes one{
+        from{
+            background-color: var(--bar);
+            color: var(--cadre);
+        }
+        50%{
+            background-color: var(--primary-color);
+            color: var(--hover);
+        }
+        to{
+            background-color: var(--bar);
+            color: var(--cadre);
+        }
+    }
+    .li0 p{
+        margin: 3.8px;
+    }
+    .li1{
+        grid-area: "li1";
+        width: auto;
+        height: 180px;
+        background-image: url(images/thermomix.jfif);
+        background-position: center;
+        background-size: 100%;
+        width: 100%;
+    }
+    .li2{
+        grid-area: "li2";
+        width: auto;
+        height: 180px;
+        background-image: url(images/Couverts.jfif);
+        background-position: center;
+        background-size: 100%;
+        width: 100%;
+    }
+    .li3{
+        grid-area: "li3";
+        width: auto;
+        height: 180px;
+        background-image: url(images/fond\ casserole.jpg);
+        background-position: center;
+        background-size: 100%;
+        width: 100%;
+    }
+    .li4{
+        grid-area: "li4";
+        width: auto;
+        height: 180px;
+    }
+    .li5{
+        grid-area: "li5";
+        width: auto;
+        height: 180px;
+    }
+    .li6{
+        grid-area: "li6";
+        width: auto;
+        height: 180px;
+    }
+
+    /* FOOTER */
+    footer{
+        position: absolute;
+        margin-bottom: 0;
+        background-color: var(--cadre);
+        z-index: 1;
+        margin: auto 0 0 0;
+        width: 100%;
+    }
+    footer div{
+        padding: 10px 5rem;
+        text-align: center;
+        font-size: 20px;
+    }
+    footer ul{
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0;
+    }
+    footer li{
+        padding: 0 20px;
+    }
+    footer a{
+        color: var(--sous-titre);
+    }
+
+    
