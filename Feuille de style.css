@@ -33,7 +33,7 @@
         text-align: justify;
         font-weight: lighter;
     }
-    main h1{
+    main h2{
         font-weight: 200;
         font-size: 40px;
     }
@@ -266,7 +266,7 @@
         margin-top: 0;
         padding-top: 0;
     }
-    section > h1{
+    section h2{
         border: outset 0.5px var(--cadre);
         border-radius: 5px;
         background-color: var(--cadre);
@@ -548,9 +548,8 @@
         height: 40px;
         background-color: var(--opaque);
         margin-bottom: 0;
-        margin-top: 42.5%;
+        margin-top: 45%;
         color: var(--hover);
-        padding-bottom: 5px;
     }
     .ustensiles li:hover:not(.li0) h3{
         background-color: var(--dark-opacity);
