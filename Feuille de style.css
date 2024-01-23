@@ -8,6 +8,7 @@
         --primary-color: rgb(240, 188, 77);
         --opaque: rgba(240, 248, 255, 0.623);
         --dark-opacity: #021552b9;
+        --ombre-lite: #0215525b;
     }
     html{
         margin: 0;
@@ -41,6 +42,23 @@
     }
     a{
         text-decoration: none;
+    }
+    .information-sup{
+        border: solid 1px var(--bar);
+        border-bottom-right-radius: 25px;
+        border-top-left-radius: 25px;
+        width: fit-content;
+        height: fit-content;
+        padding: 2px 15px 5px 11px;
+        font-weight: lighter;
+        transition: 0.3s;
+        color: var(--bar);
+    }
+    .information-sup:hover{
+        border-top-right-radius: 25px;
+        border-bottom-left-radius: 25px;
+        background-color: var(--dark-opacity);
+        color: var(--cadre); 
     }
 
 
@@ -144,17 +162,26 @@
 
 
     /* A LA UNE*/
+    .A-la-une {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: "h3 h3 h3" "img recette rien" "img recette savoir";
+    }
     #acceuil h3{
         font-weight: 100;
         font-size: 30px;
         color: var(--bar);
+        grid-area: h3;
     }
     #acceuil div{
-        margin-left: 20%;
+        margin-left: 10%;
+        grid-area: recette;
     }
     #acceuil h4{
         font-size: 25px;
         font-weight: 100;
+        margin: 0;
     }
     .item{
         width: 30px;
@@ -170,7 +197,7 @@
         position: relative;
         bottom: 8px;
     }
-    #acceuil .visuelle{
+    .visuelle{
         border-bottom-right-radius: 25px;
         border-top-left-radius: 25px;
         width: 300px;
@@ -178,7 +205,8 @@
         display: block;
         float: left;
         margin-right: 6%;
-        box-shadow: 0 0 20px 1px var(--bar);
+        box-shadow: 0 0 20px 1px var(--ombre-lite);        
+        grid-area: img;
     }
     #acceuil > p {
         margin-left: 25%;
@@ -189,8 +217,14 @@
         clear: both;
         display: block;
     }
-    .recette li{
-        margin-left: 27%;
+    #acceuil li{
+        margin-left: 25%;
+    }
+    #acceuil ul {
+        padding: 0;
+    }
+    #acceuil a{
+        grid-area: savoir;
     }
 
 
@@ -257,14 +291,15 @@
         transition: 0.5s;
         display: grid;
         column-gap: 20px;
-        grid-template-columns: 40% 57%;
+        grid-template-columns: 40% 40% 12%;
         grid-template-rows: auto;
-        grid-template-areas: "img text" "img text" "img lien";
-    }
-    .carroussel div:hover p, .carroussel div:hover a{
-        display: contents;
+        grid-template-areas: "img text text" "img text text" "img rien lien";
     }
     .carroussel div a{
+        grid-area: lien;
+    }
+    .carroussel div p{
+        grid-area: text;
     }
     .carroussel div img{
         grid-area: img;
@@ -289,29 +324,30 @@
         transition: 0.5s;
     }
 
+
     /* ACTUALITES */
     .actu {
         display: flex;
         flex-wrap: wrap-reverse;
-        border: solid 5px var(--bar);
         padding: 25px 0 ;
-        border-radius: 10px;
         justify-content: center;
     }
     iframe{
         width: 310px;
         height: auto;
-        border-radius: 10px;
+        border-radius: 20px;
     }
     .actu div{
         border: solid 1px transparent;
-        border-radius: 10px;
+        border-radius: 25px;
         padding: 6px 6px;
+        transition: 0.5s;
     }
     .actu div:hover{
-        border: solid 1px var(--primary-color);
-        background-color: var(--primary-color);
+        box-shadow: 0 0 20px 1px var(--dark-opacity);
     }
+
+
 
     /*L'EQUIPE*/
     .équipe{
