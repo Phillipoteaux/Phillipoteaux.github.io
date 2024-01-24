@@ -18,7 +18,7 @@
         margin: 0;
         padding: 0;
         font-family: Arial, Helvetica, sans-serif;
-        font-size: 16px;
+        font-size: 1rem;
     }
     body{
         margin: 0;
@@ -335,6 +335,7 @@
         background: var(--cadre);
         border: solid 3px var(--bar);
         transition: 0.5s;
+        width: 100%;
     }
 
 
@@ -793,4 +794,22 @@
         color: var(--sous-titre);
     }
 
+
+
+
+
+    @media(max-width:800px){
+        .A-la-une{
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas: "h3 h3" "img recette" "savoir recette";
+        }
+        .carroussel div{
+            grid-template-columns: 50% 45%;
+            grid-template-areas: "img text" "img lien";
+        }
+        .carroussel div:hover img{
+            height: 180px;
+        }
+
+    }
     
