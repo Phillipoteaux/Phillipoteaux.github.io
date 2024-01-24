@@ -231,15 +231,6 @@
 
 
     /* A LA UNE*/
-    .span-1{
-        background-color: var(--secondary-color-lite);
-        position: absolute;
-        left: 0;
-        width: 100%;
-        height: 73%;
-        z-index: -1;
-        margin-top: calc(50px + 97px);
-    }
     .A-la-une {
         display: grid;
         grid-template-columns: 1fr 2fr 1fr;
