@@ -4,7 +4,6 @@
         --hover:#021552;
         --bar: rgb(69, 98, 194);
         --cadre: #f0f8ff;
-        --navbar-transition-speed: .2s;
         --primary-color: rgb(240, 188, 77);
         --secondary-color-lite: rgb(255, 237, 198, 0.589);
         --opaque: rgba(240, 248, 255, 0.623);
@@ -52,8 +51,8 @@
         padding: 10px;
     }
     main{
-        padding: 5rem;
-        margin-left: 5rem;
+        padding: 5%;
+        margin-left: 5%;
         text-align: justify;
         font-weight: lighter;
     }
@@ -132,7 +131,7 @@
         left: 0;
         bottom: 0;
         background-color: var(--cadre);
-        transition: var(--navbar-transition-speed) ease;
+        transition: 0.5s;
         z-index: 5;
     }
     .navbar-menu img{
@@ -141,6 +140,8 @@
         position: absolute;
         margin: 10px auto 10px  23px;
         padding: 0;
+        display: flex;
+        justify-content: center;
     }
     .navbar:hover .img{
         display: none;
@@ -180,26 +181,22 @@
     .navbar-title:hover{
         background-color:var(--cadre);
         color:var(--primary-color);
-        border-color:var(--primary-color);
         border-bottom-right-radius: 30px;
-        border: solid 2px;
-        transition: 0.5s;
+        border: solid 2px var(--primary-color);
         padding-left: 40%;
     }
     .navbar-title{
         color: var(--cadre);
-        position: absolute;
         width: 70%;
-        display: block;
         margin: 0;
-        padding: 15px 0;
-        padding-left: 10px;
+        padding: 15px 0 15px 10px;
+        transition: 0.5s;
+        border: solid 2px transparent;
     }
     .navbar:not(:hover) .navbar-title{
         display: none;
     }
     .logo {
-        background-color: var(--bar);
         height: 60px;
     }
     .logo .navbar-title{
@@ -208,9 +205,6 @@
     }
     .navbar:hover .logo .navbar-icon{
         transform: rotate(180deg);
-    }
-    .navbar:not(:hover){
-        transition: 0.5s;
     }
 
     /* Presentation*/
@@ -270,6 +264,7 @@
         height: auto;
         box-shadow: 0 0 20px 1px var(--ombre-lite);        
         grid-area: img;
+        margin-bottom: 10px;
     }
     #acceuil > p {
         margin-left: 25%;
