@@ -2,13 +2,17 @@
         --navbar-backround-color: white;
         --sous-titre:rgb(31, 90, 199);
         --hover:#021552;
-        --bar: rgb(221, 180, 180);
+        --bar: rgb(69, 98, 194);
         --cadre: #f0f8ff;
         --navbar-transition-speed: .2s;
         --primary-color: rgb(240, 188, 77);
+        --secondary-color-lite: rgb(255, 237, 198, 0.589);
         --opaque: rgba(240, 248, 255, 0.623);
         --dark-opacity: #021552b9;
         --ombre-lite: #0215525b;
+        --color-alt-1: rgb(69, 98, 194);
+        --color-alt-2: rgb(223, 120, 120);
+        --color-alt-3: rgb(201, 75, 75);
     }
     html{
         margin: 0;
@@ -41,6 +45,7 @@
         font-weight: 200;
         font-size: 40px;
         /* border: outset 5px var(--cadre); */
+        width: 100%;
         border-bottom: solid 2px var(--primary-color);
         border-bottom-right-radius: 25px;
         background: linear-gradient(rgba(255, 0, 0, 0) 30%, var(--cadre) 70%);
@@ -92,24 +97,26 @@
     }
     .pr1{
         border: solid 2px var(--bar);
-        border-bottom-left-radius: 30px;
-        border-bottom-right-radius: 30px;
+        border-bottom-right-radius: 25px;
         padding: 0 50px;
         margin-top: 0;
         margin-right: auto;
-        border-top: solid 0px var(--cadre);
+        border-top: 0;
         position: fixed;
         z-index: 5;
         background-color:var(--cadre);
         transition: 0.3s;
         }
     .pr1:hover{
-        border: 10px double var(--primary-color);
-        transition: 0.3s;
-        border-top: solid 0;
+        border-bottom-left-radius: 25px;
+        background-color: var(--bar);
     }
     .pr1:hover .principal{
-        color: var(--primary-color) ;
+        color: var(--cadre) ;
+    }
+    .pr1:active{
+        border: 10px double var(--bar);
+        border-top: 0;
     }
     header{
         margin-top: 0;
@@ -212,6 +219,7 @@
         color: var(--dark-opacity);
         border-bottom: solid 2px var(--primary-color);
         padding: 4rem 0 5px;
+        width: 100%;
         text-align: center;
         margin-left: 0;
         display: flex;
@@ -223,6 +231,15 @@
 
 
     /* A LA UNE*/
+    .span-1{
+        background-color: var(--secondary-color-lite);
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 80%;
+        z-index: -1;
+        top: 47.5%;
+    }
     .A-la-une {
         display: grid;
         grid-template-columns: 1fr 2fr 1fr;
