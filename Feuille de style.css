@@ -319,7 +319,7 @@
     .carroussel div img{
         grid-area: img;
         width: 50%;
-        height: 140px;
+        height: auto;
         background: var(--cadre);
         border-bottom-right-radius: 25px;
         border-top-left-radius: 25px;
@@ -328,7 +328,7 @@
     }
     .carroussel div:hover img{
         width: 100%;
-        height: 250px;
+        height: auto;
     }
     .carroussel div:hover{
         padding: 10px;
@@ -490,14 +490,6 @@
         grid-template-areas: "li1 li2 li3 li0" 
         "li4 li5 li6 li0";
     }
-    .ustensiles li:not(.li0){
-        border: solid 1px var(--hover);
-        text-align: center;
-    }
-    .ustensiles li:hover:not(.li0){
-        background-color: var(--hover);
-        color: var(--cadre);
-    }
     .ustensiles button:focus .contenu{
         position: absolute;
         width: 70%;
@@ -604,47 +596,36 @@
     .li0 p{
         margin: 3.8px;
     }
+    .ustensiles li:not(.li0){
+        border: solid 1px var(--hover);
+        text-align: center;
+        background-position: center;
+        background-size: cover;
+    }
+    .ustensiles li:hover:not(.li0){
+        background-color: var(--hover);
+        color: var(--cadre);
+    }
     .li1{
         grid-area: "li1";
-        width: auto;
-        height: 180px;
         background-image: url(images/thermomix.jfif);
-        background-position: center;
-        background-size: 100%;
-        width: 100%;
     }
     .li2{
         grid-area: "li2";
-        width: auto;
-        height: 180px;
         background-image: url(images/Couverts.jfif);
-        background-position: center;
-        background-size: 100%;
-        width: 100%;
     }
     .li3{
         grid-area: "li3";
-        width: auto;
-        height: 180px;
         background-image: url(images/fond\ casserole.jpg);
-        background-position: center;
-        background-size: 100%;
-        width: 100%;
     }
     .li4{
         grid-area: "li4";
-        width: auto;
-        height: 180px;
     }
     .li5{
         grid-area: "li5";
-        width: auto;
-        height: 180px;
     }
     .li6{
         grid-area: "li6";
-        width: auto;
-        height: 180px;
     }
 
 
