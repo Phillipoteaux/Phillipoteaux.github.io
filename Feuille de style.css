@@ -61,6 +61,11 @@
     }
     a{
         text-decoration: none;
+        transition: 0.3s;
+        color: var(--bar);
+    }
+    a:hover{
+        color: var(--primary-color);
     }
     .information-sup{
         border: solid 1px var(--bar);
@@ -429,7 +434,6 @@
     }
     .contact li:hover{
         color: var(--bar);
-        text-decoration: underline;
     }
     .contact li{
         width: fit-content;
@@ -695,7 +699,7 @@
       }
       div.creation-junior:nth-of-type(6) {
         --offset: 6;
-        background-image: url(images/Flan.jfif);
+        background-image: url(images/Flan.jpg);
       }
       input:nth-of-type(1) {
         grid-column: 2 / 3;
