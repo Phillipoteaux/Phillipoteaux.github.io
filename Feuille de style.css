@@ -440,29 +440,29 @@
     .formulaire li{
         list-style: none;
     }
-    .formulaire input{
+    input{
         border: solid 1px var(--dark-opacity);
         border-radius: 5px;
         transition: 0.3s;
     }
-    .formulaire input:valid{
+    input:valid{
         border: solid 1px var(--bar);
     }
-    .formulaire input:invalid{
+    input:invalid{
         border: solid 1px var(--primary-color);
     }
-    .formulaire #message{
+    #message{
         width: 300px;
     }
-    .formulaire #envoie{
+    #envoie{
         background-color: var(--dark-opacity);
         color: var(--cadre);
     }
-    .formulaire #envoie:hover{
+    #envoie:hover{
         background-color: var(--bar);
         color: var(--cadre);
     }
-    .formulaire #envoie:active{
+    #envoie:active{
         background-color: var(--cadre);
         color: var(--bar);
     }
