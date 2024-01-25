@@ -480,6 +480,7 @@
     /*Ustensiles*/
     .ustensiles{
         display: grid;
+        width: 100%;
         list-style: none;
         border: solid 2px var(--hover);
         background-color: var(--cadre);
@@ -553,23 +554,23 @@
     }
     .ustensiles h3{
         width: 100%;
-        height: 40px;
+        height: 20%;
         background-color: var(--opaque);
         margin-bottom: 0;
-        margin-top: 44%;
         color: var(--hover);
-        padding-bottom: 5px;
+        padding-bottom: 5%;
+        transition: 0.3s;
     }
-    .ustensiles li:hover:not(.li0) h3{
+    .ustensiles li:hover h3{
         background-color: var(--dark-opacity);
         color: var(--cadre);
     }
     .li0{
         grid-area: "li0";
         width: auto;
-        height: 180px;
+        height: 100%;
         text-align: center;
-        padding-top: 2px;
+        padding-top: 5%;
         background-color: var(--bar);
         color: var(--cadre);
         animation-duration: 3s;
@@ -598,8 +599,12 @@
     .ustensiles li:not(.li0){
         border: solid 1px var(--hover);
         text-align: center;
+        height: 100%;
+        width: auto;
         background-position: center;
         background-size: cover;
+        display: flex;
+        align-items: end;
     }
     .ustensiles li:hover:not(.li0){
         background-color: var(--hover);
@@ -803,6 +808,8 @@
         .carroussel div:hover img{
             height: 180px;
         }
+
+        /* Navbar */
         .navbar{
             height: 2rem;
             position: fixed;
@@ -872,6 +879,32 @@
         }
         .navbar:hover .logo .navbar-icon{
             transform: none;
+        }
+
+        /* Ustensiles */
+        .ustensiles{
+            border: solid 1px var(--hover);
+            grid-template-columns: 2fr 2fr;
+            grid-template-rows: auto;
+            grid-template-areas: "li1 li2" "li3 li4" 
+            "li5 li6";
+        }
+        .ustensiles button{
+            background-color: var(--cadre);
+            padding: 0;
+            color: var(--hover);
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button{
+            border: none;
+        }
+        .ustensiles h3{
+            font-size: 1.5rem;
+        }
+        .li0{
+            grid-area: "li0";
+            display: none;
         }
 
     }
