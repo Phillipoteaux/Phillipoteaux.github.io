@@ -432,12 +432,41 @@
     .contact h3{
         margin: 15px 0;
     }
-    .contact li:hover{
-        color: var(--bar);
-    }
     .contact li{
         width: fit-content;
     }
+
+    /* Formulaire */
+    .formulaire li{
+        list-style: none;
+    }
+    .formulaire input{
+        border: solid 1px var(--dark-opacity);
+        border-radius: 5px;
+        transition: 0.3s;
+    }
+    .formulaire input:valid{
+        border: solid 1px var(--bar);
+    }
+    .formulaire input:invalid{
+        border: solid 1px var(--primary-color);
+    }
+    .formulaire #message{
+        width: 300px;
+    }
+    .formulaire #envoie{
+        background-color: var(--dark-opacity);
+        color: var(--cadre);
+    }
+    .formulaire #envoie:hover{
+        background-color: var(--bar);
+        color: var(--cadre);
+    }
+    .formulaire #envoie:active{
+        background-color: var(--cadre);
+        color: var(--bar);
+    }
+
 
     /*Promotions*/
     .frise{

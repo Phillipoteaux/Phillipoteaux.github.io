@@ -119,16 +119,28 @@
     <h3>Mail</h3>
     <ul>
         <li>
-            <a href="https://mail.google.com/mail/u/0/?hl=fr#inbox?compose=CllgCJvrbwZNdDsjHlXzwSqgmGvZMMMRhDTdwDSzFxQTRzJPvZffsGdmvVdSZpphwTfFjCPZlzL">
-                Oscar Buvat</a>
+            <label for="contact-oscar">Oscar Buvat</label>
+            <ul class="formulaire">
+                <li><input type="email" form="contact-oscar" placeholder="entrez votre mail" minlength="8"></li>
+                <li><input type="text" form="contact-oscar" placeholder="écrivez votre message" minlength="10" maxlength="99" id="message"></li>
+                <li><input type="submit" form="contact-oscar" id="envoie" value="Envoyer"></li>
+            </ul>
         </li>
         <li>
-            <a href="https://mail.google.com/mail?hl=fr#inbox?compose=DmwnWrRqjCJTfBPbMLRQWqXZBPzznHrCFnVGMqMzhwlQFSKNKLDDzcSpRfdFJQSprQlVhrQThZBv">
-                Le cuisto</a>
+            <label for="contact-oscar">Le cuisto</label>
+            <ul class="formulaire">
+                <li><input type="email" form="contact-oscar" placeholder="entrez votre mail" minlength="8"></li>
+                <li><input type="text" form="contact-oscar" placeholder="écrivez votre message" minlength="10" maxlength="99" id="message"></li>
+                <li><input type="submit" form="contact-oscar" id="envoie" value="Envoyer"></li>
+            </ul>
         </li>
         <li>
-            <a href="https://mail.google.com/mail?hl=fr#inbox?compose=DmwnWrRqjCJTfBPbMLRQWqXZBPzznHrCFnVGMqMzhwlQFSKNKLDDzcSpRfdFJQSprQlVhrQThZBv">
-                O fourneaux</a>
+            <label for="contact-oscar">O fourneaux</label>
+            <ul class="formulaire">
+                <li><input type="email" form="contact-oscar" placeholder="entrez votre mail" minlength="8"></li>
+                <li><input type="text" form="contact-oscar" placeholder="écrivez votre message" minlength="10" maxlength="99" id="message"></li>
+                <li><input type="submit" form="contact-oscar" id="envoie" value="Envoyer"></li>
+            </ul>
         </li>
     </ul>
     <p>Contactez nos collaborateurs si vous avez des questions, remarques... ou le site pour toutes autres requettes ou partenariat !</p>
@@ -142,9 +154,12 @@
             <p>Le Cuisto s'engage à ne vous partager ici que des recettes respectueuses de l'environnement, en privilégiant les produits locaux et de saison. Nous favorisons les circuits courts et nous travaillons en étroite collaboration avec des producteurs locaux, pour réduire notre empreinte carbone et soutenir l'économie locale. De plus, nous proposons des alternatives <a href="Page Créations.html#vegetarien">végétariennes</a> et <a href="Page Créations.html#vegan">véganes</a> pour encourager une alimentation plus respectueuse des animaux et de la planète.</p>
             <p>Nous luttons également contre le gaspillage alimentaire en encourageant nos membres à cuisiner de manière responsable et à utiliser les restes de manière créative. Nous fournissons également des conseils et des astuces pour réduire le gaspillage alimentaire à chaque étape de la cuisson.</p>
 </section>
-<section>
+<section class="faq">
     <h2>F.A.Q</h2>
-    <p>en cours de création</p>
+    <h3>Posez vos questions ici</h3>
+        <label for="f-a-q">Entrez au moins 4 caractères</label>
+        <input type="text" id="f-a-q" name="f-a-q" required minlength="4" maxlength="99">
+        <input type="submit" form="contact-oscar" id="envoie" value="Demander">
 </section>
 </main>
 
