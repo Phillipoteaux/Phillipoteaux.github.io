@@ -439,11 +439,13 @@
     /* Formulaire */
     .formulaire li{
         list-style: none;
+        padding-bottom: 1%;
     }
     input{
         border: solid 1px var(--dark-opacity);
         border-radius: 5px;
         transition: 0.3s;
+        font-size: 1rem;
     }
     input:valid{
         border: solid 1px var(--bar);
