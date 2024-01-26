@@ -441,11 +441,12 @@
         list-style: none;
         padding-bottom: 1%;
     }
-    input{
+    input, textarea{
         border: solid 1px var(--dark-opacity);
         border-radius: 5px;
         transition: 0.3s;
         font-size: 1rem;
+        font-family: Arial, Helvetica, sans-serif;
     }
     input:valid{
         border: solid 1px var(--bar);
@@ -467,6 +468,15 @@
     #envoie:active{
         background-color: var(--cadre);
         color: var(--bar);
+    }
+
+    /* F.A.Q */
+    .faq input{
+        display: flex;
+        margin-top: 1%;
+    }
+    #f-a-q{
+        width: 40%;
     }
 
 

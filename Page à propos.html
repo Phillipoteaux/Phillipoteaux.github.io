@@ -125,7 +125,7 @@
                 </datalist></li>
 
                 <li><input type="email" form="contact-oscar" placeholder="Entrez votre mail" minlength="8"></li>
-                <li><input type="text" form="contact-oscar" placeholder="Ecrivez votre message" minlength="10" maxlength="99" id="message"></li>
+                <li><textarea name="" placeholder="Ecrivez votre message" cols="70" rows="7" minlength="10" maxlength="99" id="message" form="contact-oscar"></textarea></li>
                 <li><input type="submit" form="contact-oscar" id="envoie" value="Envoyer"></li>
             </ul>
     <p>Contactez nos collaborateurs si vous avez des questions, remarques... ou le site pour toutes autres requettes ou partenariat !</p>
@@ -142,8 +142,8 @@
 <section class="faq">
     <h2>F.A.Q</h2>
     <h3>Posez vos questions ici</h3>
-        <label for="f-a-q">Entrez au moins 4 caractères</label>
-        <input type="text" id="f-a-q" name="f-a-q" required minlength="4" maxlength="99">
+        <label for="f-a-q">(Entrez au moins 4 caractères)</label>
+        <input type="text" placeholder="Posez-nous une question" id="f-a-q" name="f-a-q" required minlength="4" maxlength="99">
         <input type="submit" form="contact-oscar" id="envoie" value="Demander">
 </section>
 </main>
