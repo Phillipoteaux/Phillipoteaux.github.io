@@ -2,7 +2,7 @@
         --navbar-backround-color: white;
         --sous-titre:rgb(31, 90, 199);
         --hover:#021552;
-        --bar: rgb(69, 98, 194);
+        --bar: #4562c2;
         --cadre: #f0f8ff;
         --primary-color: rgb(240, 188, 77);
         --secondary-color-lite: rgb(255, 237, 198, 0.589);
@@ -92,37 +92,59 @@
         display: flex;
     }
     .principal{
-        color: var(--cadre);
-        font-size: 35px;
+        color: var(--bar);
+        font-size: 3rem;
         font-weight: bolder;
         text-align: center;
         font-family: 'Oleo Script Swash Caps', serif;
-        margin: 5px 0;
+        margin: 0;
     }
     .pr1{
-        border: solid 2px var(--bar);
-        border-bottom-right-radius: 25px;
-        border-bottom-left-radius: 25px;
-        padding: 0 50px;
-        border-top: 0;
         z-index: 5;
-        background-color:var(--bar);
-        transition: 0.3s;
         position: fixed;
-        }
-    .pr1:hover{
-        background-color: var(--cadre);
-    }
-    .pr1:hover .principal{
-        color: var(--bar) ;
-    }
-    .pr1:active{
-        border: 10px double var(--bar);
-        border-top: 0;
+        background-image: linear-gradient(var(--cadre), transparent);
+        padding: 0 20px;
     }
     header{
         margin-top: 0;
         padding-top: 0;
+    }
+
+    /* Fleche */
+    .pr2{
+        position: fixed;
+        border-radius: 100%;
+        background-color: var(--bar);
+        border: solid 2px var(--bar);
+        right: 2%;
+        bottom: 2%;
+        transition: 0.3s;
+        transform: rotate(270deg);
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 99;
+    }
+    .pr2:hover{
+        background-color: var(--cadre);
+        border-radius: 5px;
+    }
+    .pr2:not(:hover) .fleche-bleu{
+        display: none;
+    }
+    .pr2:hover .fleche-clair{
+        display: none;
+    }
+    .pr2:active{
+        background-color: var(--bar);
+    }
+    .pr2:active .fleche-bleu{
+        display: none;
+    }
+    .pr2:active .fleche-clair{
+        display: block;
     }
 
 
