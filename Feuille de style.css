@@ -104,13 +104,11 @@
         border-bottom-right-radius: 25px;
         border-bottom-left-radius: 25px;
         padding: 0 50px;
-        margin-top: 0;
-        margin-right: auto;
         border-top: 0;
-        position: fixed;
         z-index: 5;
         background-color:var(--bar);
         transition: 0.3s;
+        position: fixed;
         }
     .pr1:hover{
         background-color: var(--cadre);
