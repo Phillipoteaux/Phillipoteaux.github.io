@@ -155,7 +155,7 @@
         left: 0;
         bottom: 0;
         background-color: var(--cadre);
-        transition: 0.5s;
+        transition: 0.3s;
         z-index: 5;
     }
     .navbar-menu img{
@@ -1074,6 +1074,7 @@
         .équipe{
             list-style: none;
             display: grid;
+            padding-left: 0;
             grid-template-columns: auto auto auto;
             flex-wrap: nowrap;
             align-items: center;
@@ -1110,8 +1111,9 @@
             width: 200px;
             height: fit-content;
             transition: 0.5s;
-            top: 50%;
-            left: 20%;
+            top: 100px;
+            left: 15%;
+            position: absolute;
             border: solid 1px var(--bar);
         }
 
