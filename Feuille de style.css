@@ -993,6 +993,10 @@
             font-size: 1.8rem;
             width: 95%;
         }
+        p{
+            margin: 10px 0 0 5px;
+            font-weight: 500;
+        }
         .p1{
             padding: 5%;
         }
@@ -1054,6 +1058,7 @@
         .navbar-title{
             padding: 0 10px;
             border-radius: 5px;
+            font-weight: 800;
         }
         .logo .navbar-title{
             font-size: 1rem;
@@ -1074,9 +1079,6 @@
         #acceuil li{
             margin-left: 15px;
             text-align: left;
-        }
-        p{
-            margin: 10px 0 0 5px;
         }
 
         /* Carrousel */
