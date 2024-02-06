@@ -685,6 +685,25 @@
         grid-area: "li6";
     }
 
+    /* Impérissables */
+    .produits-imperissables{
+        display: flex;
+        gap: 50px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .produits-imperissables img{
+        width: 200px;
+        height: auto;
+        border-radius: 25px;
+        margin: 0 auto;
+        display: flex;
+    }
+    .produits-imperissables div{
+        width: 250px;
+        overflow: hidden;
+    }
+
 
     /* Créations */
     /* les meilleurs créations */
@@ -1074,6 +1093,7 @@
         }
         .A-la-une ul{
             font-size: 0.8rem;
+            font-weight: bolder;
         }
         #acceuil li{
             margin-left: 15px;
