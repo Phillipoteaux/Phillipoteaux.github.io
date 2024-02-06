@@ -154,7 +154,7 @@
         top: 0;
         left: 0;
         bottom: 0;
-        background-color: var(--cadre);
+        background-color: var(--bar);
         transition: 0.3s;
         z-index: 5;
     }
@@ -166,6 +166,9 @@
         padding: 0;
         display: flex;
         justify-content: center;
+    }
+    .img-menu{
+        display: none;
     }
     .navbar:hover .img{
         display: none;
@@ -189,7 +192,6 @@
         flex-direction: column;
         align-items: center;
         height: 100%;
-        background-color: var(--bar);
     }
     .navbar-item{
         width: 100%;
@@ -816,7 +818,7 @@
 
     /* FOOTER */
     footer{
-        position: absolute;
+        position: relative;
         margin-bottom: 0;
         background-color: var(--cadre);
         border-top: solid 2px var(--primary-color);
@@ -824,17 +826,19 @@
         margin: auto 0 0 0;
         width: 100%;
     }
-    footer div{
+    .contenant{
+        display: flex;
+        column-gap: 10%;
         padding: 10px 5rem;
-        text-align: center;
-        font-size: 20px;
+        justify-content: center;
     }
     footer ul{
         list-style: none;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
         padding: 0;
+        line-height: 2rem;
+    }
+    footer h4{
+        font-size: 1.5rem;
     }
     footer li{
         padding: 0 20px;
@@ -989,6 +993,9 @@
             font-size: 1.8rem;
             width: 95%;
         }
+        .p1{
+            padding: 5%;
+        }
         #acceuil h4{
             font-size: 1rem;
         }
@@ -998,6 +1005,14 @@
         }
 
         /* Navbar */
+        .img-menu{
+            display: block;
+            width: 20px;
+            padding-left: 20px;
+        }
+        .navbar:hover .img-menu{
+            display: none;
+        }
         .navbar{
             height: 2rem;
             position: fixed;
@@ -1008,14 +1023,17 @@
             align-items: center;
             width: 100%;
         }
+        nav:not(:hover) li{
+            display: none;
+        }
         .navbar-menu img:not(.img1){
             display: none;
         }
-        .navbar-menu img{
+        .img1{
             width: 20px;
         }
         .navbar:hover{
-            height: 3rem;
+            height: 5rem;
         }
         .navbar-menu {
             padding: 0;
@@ -1024,6 +1042,7 @@
             grid-template-columns: auto auto auto;
             align-items: center;
             width: 100%;
+            row-gap: 20px;
         }
         .navbar-title:hover{
             background-color: var(--cadre);
@@ -1039,6 +1058,10 @@
         .logo .navbar-title{
             font-size: 1rem;
             font-weight: lighter;
+        }
+
+        .présentation{
+            padding: 30px 0 15px;
         }
 
         /* A la une */
@@ -1069,16 +1092,22 @@
         }
         
         /* Footer */
-        footer div{
-            font-size: 1rem;
+        .contenant{
             padding: 20px;
         }
-        footer p a{
+        footer li{
+            font-size: 1rem;
+            padding: 0;
+        }
+        footer img{
+            width: 35px;
+        }
+        footer h4{
             font-size: 1rem;
         }
-        footer ul{
-            display: flex;
-            flex-direction: row;
+        .contenant{
+            column-gap: 15%;
+            padding: 10px 5rem;
         }
 
         /* A propos */
