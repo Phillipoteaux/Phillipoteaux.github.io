@@ -536,10 +536,11 @@
         width: 100%;
         list-style: none;
         border: solid 2px var(--hover);
-        background-color: var(--cadre);
+        border-radius: 25px;
+        overflow: hidden;
         padding: 0;
         grid-template-columns: 2fr 2fr 2fr 5rem;
-        grid-template-rows: auto;
+        grid-template-rows: 1fr 1fr;
         grid-template-areas: "li1 li2 li3 li0" 
         "li4 li5 li6 li0";
     }
@@ -646,11 +647,7 @@
             color: var(--cadre);
         }
     }
-    .li0 p{
-        margin: 3.8px;
-    }
     .ustensiles li:not(.li0){
-        border: solid 1px var(--hover);
         text-align: center;
         height: 100%;
         width: auto;
@@ -677,12 +674,15 @@
     }
     .li4{
         grid-area: "li4";
+        background-image: url(images/gant-de-cuisine-380x380.jpg);
     }
     .li5{
         grid-area: "li5";
+        background-image: url(images/kitchen-knife-forges-21-cm.jpg);
     }
     .li6{
         grid-area: "li6";
+        background-image: url(images/tablier.jpg);
     }
 
     /* Impérissables */
@@ -698,10 +698,22 @@
         border-radius: 25px;
         margin: 0 auto;
         display: flex;
+        grid-area: appercu;
     }
     .produits-imperissables div{
         width: 250px;
-        overflow: hidden;
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-areas: "appercu appercu" "article article" "prix ajout";
+    }
+    .produits-imperissables span{
+        grid-area: prix;
+    }
+    .produits-imperissables p{
+        grid-area: article;
+    }
+    .produits-imperissables a{
+        grid-area: ajout;
     }
 
 
@@ -969,7 +981,7 @@
         .ustensiles{
             border: solid 1px var(--hover);
             grid-template-columns: 2fr 2fr;
-            grid-template-rows: auto;
+            grid-template-rows: 1fr 1fr 1fr;
             grid-template-areas: "li1 li2" "li3 li4" 
             "li5 li6";
         }
@@ -1098,6 +1110,40 @@
         #acceuil li{
             margin-left: 15px;
             text-align: left;
+        }
+
+        .frise{
+            margin-top: 10%;
+            animation-duration: 8s;
+        }
+        @keyframes frise{
+            from{
+                padding-left: 110%;
+                width: 200%;
+            }
+            25%{
+                color: var(--bar);
+            }
+            50%{
+                color: var(--primary-color);
+            }
+            to{
+                margin-left: -160%;
+                width: 200%;
+                color: var(--hover);
+            }
+        }
+
+        /* Ustensiles */
+        .ustensiles{
+            border: solid 1px var(--hover);
+            grid-template-columns: 2fr 2fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-areas: "li1 li2" "li3 li4" 
+            "li5 li6";
+        }
+        .ustensiles h3{
+            font-size: 1.5rem;
         }
 
         /* Carrousel */
