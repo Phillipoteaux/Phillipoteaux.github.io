@@ -594,6 +594,10 @@
     .contenu div p{
         margin-bottom: 0;
     }
+    .contenu div a{
+        float: right;
+        margin: 0 0 20px 20px;
+    }
     .prodtitle{
         font-size: 18px;
     }
